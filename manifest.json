@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Picture to Picture — חלון וידאו צף",
+  "version": "1.0.0",
+  "description": "הוצאת הסרטון לחלון צף מעל כל החלונות. לחיצה נוספת מחזירה אותו לעמוד.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Picture to Picture — פתיחה / סגירה של חלון צף",
+    "default_icon": {"16":"icons/16.png","32":"icons/32.png","48":"icons/48.png","128":"icons/128.png"}
+  },
+  "icons": {"16":"icons/16.png","32":"icons/32.png","48":"icons/48.png","128":"icons/128.png"},
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+P" },
+      "description": "פתיחה / סגירה של וידאו בחלון צף"
+    }
+  }
+}
